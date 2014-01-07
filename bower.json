@@ -5,8 +5,7 @@
   "ignore":
   [
     "src",
-    "node_modules",
-    "index.*"
+    "node_modules"
   ],
   "dependencies": { "jquery": "latest" }
 }
