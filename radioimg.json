@@ -1,0 +1,29 @@
+{
+	"name": "radioimg",
+	"title": "Simple radio buttons with images",
+	"description": "A jump-start for jQuery plugins development.",
+	"keywords": [
+		"jquery",
+		"radio",
+		"img"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Paul Knittel",
+		"email": "paulknittel@live.com",
+		"url": "https://paulknittel.com"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"bugs": "https://github.com/xypaul/radioimg.js/issues",
+	"homepage": "http://xypaul.github.io/radioimg.js/",
+	"docs": "http://xypaul.github.io/radioimg.js/",
+	"download": "http://xypaul.github.io/radioimg.js/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.9"
+	}
+}

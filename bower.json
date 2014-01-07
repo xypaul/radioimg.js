@@ -1,0 +1,12 @@
+{
+  "name": "radioimg.js",
+  "version": "0.0.1",
+  "main": [ "/dist/jquery.radioimg.js" ],
+  "ignore":
+  [
+    "src",
+    "node_modules",
+    "index.*"
+  ],
+  "dependencies": { "jquery": "latest" }
+}

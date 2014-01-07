@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Radio Img Example</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.radioimg.js"></script>
+	</head>
+	<body>
+		<style>
+			.radioimg {
+				border: 3px solid transparent;
+			}
+
+			.radioimg-selected {
+				border: 3px solid red;
+			}
+
+			.radioimg:hover {
+				border: 3px dotted rgba(121,121,121, 0.5);
+			}
+		</style>
+
+		<h1>Default</h1>
+		<div class="default"></div>
+
+		<h1>Sample Images</h1>
+		<div class="custom-data"></div>
+
+		<h1>Setting Default</h1>
+		<div class="custom-default"></div>
+
+		<script>
+			$(function() {
+
+				var settings = {
+					data: 	[
+							  {
+							    data: "A5",
+							    img: "http://placehold.it/74x105/35d/fff&text=A5"
+							  },
+							  {
+							    data: "A4",
+							    img: "http://placehold.it/105x148/35d/fff&text=A4"
+							  },
+							  {
+							    data: "A3",
+							    img: "http://placehold.it/148x210/35d/fff&text=A3"
+							  },
+							  {
+							    data: "16*9",
+							    img: "http://placehold.it/160x90/35d/fff&text=16*9"
+							  },
+							  {
+							    data: "4*3",
+							    img: "http://placehold.it/80x60/35d/fff&text=4*3"
+							  }
+							]
+				};
+
+
+				$('.default').radioimg();
+
+				$('.custom-data').radioimg(settings);
+
+				$('.custom-data').on('change', function(event, val){
+					console.log(val);
+				})
+
+
+				settings.initial = "A3";
+				$('.custom-default').radioimg(settings);
+
+
+
+			});
+		</script>
+	</body>
+</html>
