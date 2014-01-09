@@ -12,7 +12,7 @@
             debug: false,
             color: "black",
             initial: "not set",
-            data: [{data: "1", img: "http://placehold.it/60x60/35d/fff&text=1"}, {data: "2", img: "http://placehold.it/60x60/35d/fff&text=2"}]
+            data: [{value: "1", img: "http://placehold.it/60x60/35d/fff&text=1"}, {value: "2", img: "http://placehold.it/60x60/35d/fff&text=2"}]
         };   // default options
 
     var privateMethod = function () {
@@ -49,7 +49,7 @@
                         'type': 'radio',
                         'name': o.name,
                         'id': o.name + i,
-                        'value': d.data
+                        'value': d.value
                 })
 
                 // Create label with img
@@ -63,7 +63,7 @@
                 })
 
                 // Check if it should be checked
-                if ((o.initial == "not set" && i == 0) ||  (o.initial === d.data)){
+                if ((o.initial == "not set" && i == 0) ||  (o.initial === d.value)){
                     input.prop("checked", true);
                     label.find('img').addClass(o.selectedClass)
                 }
